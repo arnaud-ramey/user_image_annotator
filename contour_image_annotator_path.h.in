@@ -1,0 +1,14 @@
+/*!
+* \file contour_image_annotator_path.h.in
+* A CMake generated file for compiling otions
+* \date 11/2014
+* \author Arnaud Ramey
+*/
+#ifndef CONTOUR_IMAGE_ANNOTATOR_PATH_H
+#define CONTOUR_IMAGE_ANNOTATOR_PATH_H
+
+#define CONTOUR_IMAGE_ANNOTATOR_PATH       "@PROJECT_SOURCE_DIR@/"
+#cmakedefine01 USE_PCL_FOR_GROUND_PLANE
+#cmakedefine01 USE_IMAGEMAGICK_FOR_16_COLORS_CONVERSION
+
+#endif /* MAGGIEPTIONS_H_ */
