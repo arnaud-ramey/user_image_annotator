@@ -1,0 +1,40 @@
+________________________________________________________________________________
+
+Dependencies
+________________________________________________________________________________
+You need the following libraries before compiling :
+ * cmake  ( sudo apt-get install cmake ),
+ * OpenCV ( sudo apt-get install libopencv-dev )
+
+________________________________________________________________________________
+
+How to build the program
+________________________________________________________________________________
+The project is based on a CMakeLists.
+It is easy to build the program on a Unix computer.
+Go in the source folder and type:
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+
+Two compiling options are available.
+Each of them is by default disabled and can be toggled, for instance,
+using "ccmake" instead of "cmake" and toggling it manually
+(cf "ccmake" manual).
+
+* USE_IMAGEMAGICK_FOR_16_COLORS_CONVERSION :
+  if TRUE, call ImageMagick "convert" utility
+  to transform the color space of the output PNGs
+  from RGB to 16 indexed colors.
+  This reduces the size of the output PNGs drastically but requires a longer time
+  to switch from one image to another.
+  REQUIRES: ImageMagick "convert" (http://www.imagemagick.org/ , available in repos)
+
+* USE_PCL_FOR_GROUND_PLANE:
+  if TRUE, use the Ransac implementation of the Point Cloud Library (PCL)
+  to estimate the equation of the ground plane in a depth image.
+  REQUIRES: PCL (http://pointclouds.org/ , available in repos)
+
+For Windows users, some instructions are available on OpenCV website:
+http://opencv.willowgarage.com/wiki/Getting_started .
