@@ -2,6 +2,8 @@
                   | user_image_annotator |
                   +----------------------+
 
+[![Build Status](https://travis-ci.org/arnaud-ramey/user_image_annotator.svg)](https://travis-ci.org/arnaud-ramey/user_image_annotator)
+
 A series of tools for annotating images using floodfill and indexed images.
 
 License :                  see the LICENSE file.
