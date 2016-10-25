@@ -3,6 +3,7 @@ ________________________________________________________________________________
 Dependencies
 ________________________________________________________________________________
 You need the following libraries before compiling :
+ * Boost  ( sudo apt-get install libboost-dev ),
  * cmake  ( sudo apt-get install cmake ),
  * OpenCV ( sudo apt-get install libopencv-dev )
 
